@@ -2,6 +2,7 @@ class PicturesController < ApplicationController
 
   def index
     @pictures = Picture.all
+    @month_old = Picture.month_old(Time.now)
 
   end
 

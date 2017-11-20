@@ -1,6 +1,6 @@
 <h1> Pictures (<%= @pictures.length %>) </h1>
 <%= link_to("New Picture", "/pictures/new") %>
-<% @pictures.each do |picture| %>
+<% @month_old.each do |picture| %>
   <p> <%= picture.artist %>
       <%= picture.title %>
   </p>
